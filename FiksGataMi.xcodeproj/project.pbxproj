@@ -16,6 +16,7 @@
 		50F9AB4E1ACAF6D2009C6C0D /* FiksGataMiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F9AB4D1ACAF6D2009C6C0D /* FiksGataMiTests.m */; };
 		50F9AB581ACB0213009C6C0D /* MainViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 50F9AB381ACAF6D2009C6C0D /* MainViewController.h */; };
 		50F9AB591ACB0213009C6C0D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F9AB391ACAF6D2009C6C0D /* MainViewController.m */; };
+		50F9AB5B1ACB06FF009C6C0D /* GlobalStrings.h in Sources */ = {isa = PBXBuildFile; fileRef = 50F9AB5A1ACB066A009C6C0D /* GlobalStrings.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		50F9AB471ACAF6D2009C6C0D /* FiksGataMiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiksGataMiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F9AB4C1ACAF6D2009C6C0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50F9AB4D1ACAF6D2009C6C0D /* FiksGataMiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiksGataMiTests.m; sourceTree = "<group>"; };
+		50F9AB5A1ACB066A009C6C0D /* GlobalStrings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalStrings.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				50F9AB3E1ACAF6D2009C6C0D /* Images.xcassets */,
 				50F9AB401ACAF6D2009C6C0D /* LaunchScreen.xib */,
 				50F9AB311ACAF6D2009C6C0D /* Supporting Files */,
+				50F9AB5A1ACB066A009C6C0D /* GlobalStrings.h */,
 			);
 			path = FiksGataMi;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50F9AB5B1ACB06FF009C6C0D /* GlobalStrings.h in Sources */,
 				50F9AB581ACB0213009C6C0D /* MainViewController.h in Sources */,
 				50F9AB591ACB0213009C6C0D /* MainViewController.m in Sources */,
 				50F9AB4E1ACAF6D2009C6C0D /* FiksGataMiTests.m in Sources */,
