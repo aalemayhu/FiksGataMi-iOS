@@ -81,10 +81,9 @@
 		50F9AB301ACAF6D2009C6C0D /* FiksGataMi */ = {
 			isa = PBXGroup;
 			children = (
+				50F9AB571ACAF8D4009C6C0D /* Controllers */,
 				50F9AB351ACAF6D2009C6C0D /* AppDelegate.h */,
 				50F9AB361ACAF6D2009C6C0D /* AppDelegate.m */,
-				50F9AB381ACAF6D2009C6C0D /* ViewController.h */,
-				50F9AB391ACAF6D2009C6C0D /* ViewController.m */,
 				50F9AB3B1ACAF6D2009C6C0D /* Main.storyboard */,
 				50F9AB3E1ACAF6D2009C6C0D /* Images.xcassets */,
 				50F9AB401ACAF6D2009C6C0D /* LaunchScreen.xib */,
@@ -117,6 +116,15 @@
 				50F9AB4C1ACAF6D2009C6C0D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50F9AB571ACAF8D4009C6C0D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				50F9AB381ACAF6D2009C6C0D /* ViewController.h */,
+				50F9AB391ACAF6D2009C6C0D /* ViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,6 +424,7 @@
 				50F9AB531ACAF6D2009C6C0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50F9AB541ACAF6D2009C6C0D /* Build configuration list for PBXNativeTarget "FiksGataMiTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +433,7 @@
 				50F9AB561ACAF6D2009C6C0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
