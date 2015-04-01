@@ -1,5 +1,6 @@
 #import "MainViewController.h"
 #import "GlobalStrings.h"
+#import "EditViewController.h"
 
 @interface MainViewController ()
 
@@ -39,6 +40,8 @@
 
 -(void) pressedEditItem {
     NSLog(@"%s", __PRETTY_FUNCTION__);
+    EditViewController *e = [EditViewController new];
+    [[self navigationController] presentViewController:e animated:YES completion:nil];
 }
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50D392CB1ACBEAE800E369A0 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D392CA1ACBEAE800E369A0 /* EditViewController.m */; };
 		50F9AB341ACAF6D2009C6C0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F9AB331ACAF6D2009C6C0D /* main.m */; };
 		50F9AB371ACAF6D2009C6C0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F9AB361ACAF6D2009C6C0D /* AppDelegate.m */; };
 		50F9AB3A1ACAF6D2009C6C0D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F9AB391ACAF6D2009C6C0D /* MainViewController.m */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50D392C91ACBEAE800E369A0 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditViewController.h; path = ../EditViewController.h; sourceTree = "<group>"; };
+		50D392CA1ACBEAE800E369A0 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditViewController.m; path = ../EditViewController.m; sourceTree = "<group>"; };
 		50F9AB2E1ACAF6D2009C6C0D /* FiksGataMi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiksGataMi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F9AB321ACAF6D2009C6C0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50F9AB331ACAF6D2009C6C0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -126,6 +129,8 @@
 		50F9AB571ACAF8D4009C6C0D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				50D392C91ACBEAE800E369A0 /* EditViewController.h */,
+				50D392CA1ACBEAE800E369A0 /* EditViewController.m */,
 				50F9AB381ACAF6D2009C6C0D /* MainViewController.h */,
 				50F9AB391ACAF6D2009C6C0D /* MainViewController.m */,
 			);
@@ -232,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50D392CB1ACBEAE800E369A0 /* EditViewController.m in Sources */,
 				50F9AB3A1ACAF6D2009C6C0D /* MainViewController.m in Sources */,
 				50F9AB371ACAF6D2009C6C0D /* AppDelegate.m in Sources */,
 				50F9AB341ACAF6D2009C6C0D /* main.m in Sources */,
