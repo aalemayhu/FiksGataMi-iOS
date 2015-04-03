@@ -26,6 +26,7 @@
      [[UIBarButtonItem alloc]
       initWithTitle:@"Rediger" style:UIBarButtonItemStylePlain
       target:self action:@selector(pressedEditItem)]];
+    [[self view] setBackgroundColor:[UIColor whiteColor]];
 }
 
 - (void)didReceiveMemoryWarning {
