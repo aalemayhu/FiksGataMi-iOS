@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
 
-@interface EditViewController : UIViewController
+@interface EditViewController : UIViewController<UITextFieldDelegate>
 
 @end
