@@ -14,9 +14,12 @@
 }
 
 -(void) configure {
-    
     [self setTitle:MAIN_VIEW_CONTROLLER_TITLE];
-    
+    [self configureItems];
+    [[self view] setBackgroundColor:[UIColor whiteColor]];
+}
+
+-(void) configureItems {
     [[self navigationItem] setRightBarButtonItem:
      [[UIBarButtonItem alloc]
       initWithTitle:@"Rapporter" style:UIBarButtonItemStylePlain
@@ -26,7 +29,7 @@
      [[UIBarButtonItem alloc]
       initWithTitle:@"Rediger" style:UIBarButtonItemStylePlain
       target:self action:@selector(pressedEditItem)]];
-    [[self view] setBackgroundColor:[UIColor whiteColor]];
+
 }
 
 - (void)didReceiveMemoryWarning {
