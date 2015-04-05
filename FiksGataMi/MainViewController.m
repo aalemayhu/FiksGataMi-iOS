@@ -32,6 +32,8 @@
       initWithTitle:@"Rediger" style:UIBarButtonItemStylePlain
       target:self action:@selector(pressedEditItem)]];
 
+    //TODO: Configure toolbar to show items for gallery and camera.
+
     [self configureImageView];
 }
 
@@ -49,6 +51,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
+#pragma mark CAM/GAL actions
+
+// TODO: Get image from gallery.
+// TOD: Get image from cam.
 
 #pragma mark - Actions
 
