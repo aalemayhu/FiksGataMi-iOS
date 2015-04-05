@@ -2,6 +2,8 @@
 #import "GlobalStrings.h"
 #import "EditViewController.h"
 
+#define IMAGE_VIEW_TAG 2007
+
 @interface MainViewController ()
 
 @end
@@ -29,6 +31,19 @@
      [[UIBarButtonItem alloc]
       initWithTitle:@"Rediger" style:UIBarButtonItemStylePlain
       target:self action:@selector(pressedEditItem)]];
+
+    [self configureImageView];
+}
+
+-(void) configureImageView {
+
+    CGSize winSize = self.view.frame.size;
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:
+                              CGRectMake(0, winSize.width * 0.5, winSize.width, winSize.height/2)];
+    [imageView setTag:IMAGE_VIEW_TAG];
+    [imageView setContentMode:UIViewContentModeScaleAspectFit];
+    [imageView setBackgroundColor:[UIColor redColor]];
+    [[self view] addSubview:imageView];
 }
 
 - (void)didReceiveMemoryWarning {
