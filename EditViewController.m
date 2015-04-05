@@ -1,4 +1,6 @@
 #import "EditViewController.h"
+#import "AppDelegate.h"
+#import "GlobalStrings.h"
 
 @implementation EditViewController
 
@@ -23,6 +25,7 @@ struct AAFormField AAFormFieldMake(int tag, NSString *placeholder, NSString *val
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [self configure];
 }
 
@@ -33,11 +36,8 @@ struct AAFormField AAFormFieldMake(int tag, NSString *placeholder, NSString *val
 }
 
 -(void) configureFormFields {
-    //TODO: Load..
-    NSString *fullName = @"";
-    NSString *epost = @"";
-    [self createTextField:AAFormFieldMake(FULL_NAME, @"Ditt navn", fullName)];
-    [self createTextField:AAFormFieldMake(EMAIL, @"Din epost", epost)];
+    [self createTextField:AAFormFieldMake(FULL_NAME, @"Ditt navn", [delegate valueForKey:KEY_FULL_NAME])];
+    [self createTextField:AAFormFieldMake(EMAIL, @"Din epost", [delegate valueForKey:KEY_EMAIL])];
 }
 
 -(void) configureSubmit {
@@ -56,8 +56,14 @@ struct AAFormField AAFormFieldMake(int tag, NSString *placeholder, NSString *val
 }
 
 -(void) done {
-    //TODO: save..
+    [delegate storeDetails: [self fieldValueForKey:FULL_NAME]
+                     email:[self fieldValueForKey:EMAIL]];
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(NSString *) fieldValueForKey:(int)tag {
+    UITextField *f = (UITextField *)[[self view] viewWithTag:tag];
+    return f.text;
 }
 
 

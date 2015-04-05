@@ -8,8 +8,11 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "GlobalStrings.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () {
+    NSUserDefaults *userDefaults;
+}
 
 @end
 
@@ -23,6 +26,8 @@
     nav.delegate = self;
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
+
+    userDefaults = [NSUserDefaults standardUserDefaults];
 
     return YES;
 }
@@ -48,5 +53,15 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+-(void) storeDetails:(NSString *) fullname email:(NSString *)email {
+    [userDefaults setValue:fullname forKey:KEY_FULL_NAME];
+    [userDefaults setValue:email forKey:KEY_EMAIL];
+}
+
+-(NSString *) valueForKey:(NSString *)key {
+    return [userDefaults valueForKey:key];
+}
+
 
 @end
