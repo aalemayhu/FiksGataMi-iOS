@@ -74,7 +74,7 @@ struct AAFormField AAFormFieldMake(int tag, NSString *placeholder, NSString *val
                                          size.height * 4 * field.tag,
                                          winSize.width, size.height*2)];
     textField.center = CGPointMake(self.view.center.x, textField.center.y);
-    
+    [textField setBackgroundColor:[UIColor whiteColor]];
     [textField setDelegate:self];
     [[textField layer] setBorderWidth:0.5f];
     [[textField layer] setBorderColor:[[UIColor blackColor] CGColor]];
