@@ -1,8 +1,8 @@
 #import "EditViewController.h"
-
 #import "AppDelegate.h"
-
 #import "GlobalStrings.h"
+#import "FormModel.h"
+#import "ViewUtil.h"
 
 
 @implementation EditViewController
@@ -10,20 +10,7 @@
 #define FULL_NAME_TAG 3
 #define EMAIL_TAG 4
 
-struct AAFormField {
-    int tag;
-    __unsafe_unretained NSString *placeholder;
-    __unsafe_unretained NSString *value;
-};
 
-
-struct AAFormField AAFormFieldMake(int tag, NSString *placeholder, NSString *value) {
-    struct AAFormField field;
-    field.tag = tag;
-    field.placeholder = placeholder;
-    field.value = value;
-    return field;
-}
 
 
 - (void)configure {
@@ -35,8 +22,10 @@ struct AAFormField AAFormFieldMake(int tag, NSString *placeholder, NSString *val
 
 
 - (void)configureFormFields {
-    [self createTextField:AAFormFieldMake(FULL_NAME_TAG, @"Ditt navn", [delegate valueForKey:KEY_FULL_NAME])];
-    [self createTextField:AAFormFieldMake(EMAIL_TAG, @"Din epost", [delegate valueForKey:KEY_EMAIL])];
+    [ViewUtil createTextField:AAFormFieldMake(FULL_NAME_TAG, @"Ditt navn", [delegate valueForKey:KEY_FULL_NAME])
+                      forView:self.view delegate:self];
+    [ViewUtil createTextField:AAFormFieldMake(EMAIL_TAG, @"Din epost", [delegate valueForKey:KEY_EMAIL])
+     forView:self.view delegate:self];
 }
 
 
@@ -85,28 +74,7 @@ struct AAFormField AAFormFieldMake(int tag, NSString *placeholder, NSString *val
     return f.text;
 }
 
-- (void)createTextField:(struct AAFormField)field {
-    NSString *sizeString = field.value != nil || field.value.length > 0 ? field.value : field.placeholder;
-    CGSize size = [sizeString sizeWithFont:[UIFont systemFontOfSize:12]];
-    CGSize winSize = self.view.frame.size;
-    UITextField *textField = [[UITextField alloc] initWithFrame:
-            CGRectMake(0,
-                    winSize.height / 1.5 -
-                            size.height * 4 * field.tag,
-                    winSize.width, size.height * 2)];
 
-    textField.center = CGPointMake(self.view.center.x, textField.center.y);
-    [textField setBackgroundColor:[UIColor whiteColor]];
-    [textField setDelegate:self];
-    [[textField layer] setBorderWidth:1.0f];
-    [[textField layer] setBorderColor:[[UIColor blackColor] CGColor]];
-    [textField setTag:field.tag];
-    [textField setPlaceholder:field.placeholder];
-    [textField setText:field.value];
-    textField.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 5, 20)];
-    textField.leftViewMode = UITextFieldViewModeAlways;
-    [[self view] addSubview:textField];
-}
 
 
 - (BOOL)isEmailValid:(NSString *)email {
