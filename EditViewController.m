@@ -23,14 +23,9 @@ struct AAFormField AAFormFieldMake(int tag, NSString *placeholder, NSString *val
     return field;
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    [self configure];
-}
-
 -(void) configure {
-    [[self view] setBackgroundColor:[UIColor colorWithRed:0.533 green:0.694 blue:0.855 alpha:1.000]];
+    [super configure];
+    delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [self configureFormFields];
     [self configureSubmit];
 }

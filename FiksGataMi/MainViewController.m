@@ -11,15 +11,10 @@
 
 @implementation MainViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self configure];
-}
-
 -(void) configure {
+    [super configure];
     [self setTitle:MAIN_VIEW_CONTROLLER_TITLE];
     [self configureSubviews];
-    [[self view] setBackgroundColor:[UIColor whiteColor]];
 }
 
 -(void) configureSubviews {

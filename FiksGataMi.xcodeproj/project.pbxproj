@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		500DF67F1AD29398005AA373 /* FiksgatamiBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 500DF67E1AD29398005AA373 /* FiksgatamiBaseController.m */; };
 		50D392CB1ACBEAE800E369A0 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D392CA1ACBEAE800E369A0 /* EditViewController.m */; };
 		50F9AB341ACAF6D2009C6C0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F9AB331ACAF6D2009C6C0D /* main.m */; };
 		50F9AB371ACAF6D2009C6C0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F9AB361ACAF6D2009C6C0D /* AppDelegate.m */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		500DF67D1AD29398005AA373 /* FiksgatamiBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiksgatamiBaseController.h; sourceTree = "<group>"; };
+		500DF67E1AD29398005AA373 /* FiksgatamiBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiksgatamiBaseController.m; sourceTree = "<group>"; };
 		50D392C91ACBEAE800E369A0 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditViewController.h; path = ../EditViewController.h; sourceTree = "<group>"; };
 		50D392CA1ACBEAE800E369A0 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditViewController.m; path = ../EditViewController.m; sourceTree = "<group>"; };
 		50F9AB2E1ACAF6D2009C6C0D /* FiksGataMi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiksGataMi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +130,8 @@
 				50D392CA1ACBEAE800E369A0 /* EditViewController.m */,
 				50F9AB381ACAF6D2009C6C0D /* MainViewController.h */,
 				50F9AB391ACAF6D2009C6C0D /* MainViewController.m */,
+				500DF67D1AD29398005AA373 /* FiksgatamiBaseController.h */,
+				500DF67E1AD29398005AA373 /* FiksgatamiBaseController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 				50F9AB3A1ACAF6D2009C6C0D /* MainViewController.m in Sources */,
 				50F9AB371ACAF6D2009C6C0D /* AppDelegate.m in Sources */,
 				50F9AB341ACAF6D2009C6C0D /* main.m in Sources */,
+				500DF67F1AD29398005AA373 /* FiksgatamiBaseController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

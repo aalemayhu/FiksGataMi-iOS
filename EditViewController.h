@@ -1,7 +1,8 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "FiksgatamiBaseController.h"
 
-@interface EditViewController : UIViewController<UITextFieldDelegate> {
+@interface EditViewController : FiksgatamiBaseController<UITextFieldDelegate> {
     AppDelegate *delegate;
 }
 

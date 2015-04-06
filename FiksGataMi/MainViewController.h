@@ -1,7 +1,6 @@
 #import <UIKit/UIKit.h>
+#import "FiksgatamiBaseController.h"
 
-@interface MainViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
-
-
+@interface MainViewController : FiksgatamiBaseController<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @end
 
