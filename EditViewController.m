@@ -30,7 +30,7 @@ struct AAFormField AAFormFieldMake(int tag, NSString *placeholder, NSString *val
 }
 
 -(void) configure {
-    [[self view] setBackgroundColor:[UIColor groupTableViewBackgroundColor]];
+    [[self view] setBackgroundColor:[UIColor colorWithRed:0.533 green:0.694 blue:0.855 alpha:1.000]];
     [self configureFormFields];
     [self configureSubmit];
 }
@@ -45,13 +45,14 @@ struct AAFormField AAFormFieldMake(int tag, NSString *placeholder, NSString *val
     UIButton *doneButton = [[UIButton alloc] initWithFrame:
                             CGRectMake(nameField.frame.origin.x,
                                        nameField.frame.origin.y +nameField.frame.size.height*2,
-                                       nameField.frame.size.width,
-                                       nameField.frame.size.height*4)];
-    [doneButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+                                       nameField.frame.size.width/3,
+                                       nameField.frame.size.height)];
+    [doneButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [doneButton setBackgroundColor:[UIColor blackColor]];
     [doneButton setTitle:@"Ferdig" forState:UIControlStateNormal];
     [doneButton addTarget:self action:@selector(done) forControlEvents:UIControlEventTouchUpInside];
-    CGRect f = doneButton.frame;
-    f.origin = self.view.center;
+
+    [doneButton setCenter:CGPointMake(self.view.center.x, doneButton.center.y)];
     [[self view] addSubview:doneButton];
 }
 
@@ -81,7 +82,7 @@ struct AAFormField AAFormFieldMake(int tag, NSString *placeholder, NSString *val
     
     [textField setDelegate:self];
     [[textField layer] setBorderWidth:0.5f];
-    [[textField layer] setBorderColor:[[UIColor blueColor] CGColor]];
+    [[textField layer] setBorderColor:[[UIColor blackColor] CGColor]];
     [textField setTag:field.tag];
     [textField setPlaceholder:field.placeholder];
     [textField setText:field.value];
