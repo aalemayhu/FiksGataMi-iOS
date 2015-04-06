@@ -73,10 +73,11 @@ struct AAFormField AAFormFieldMake(int tag, NSString *placeholder, NSString *val
     
     CGSize winSize = self.view.frame.size;
     UITextField *textField = [[UITextField alloc] initWithFrame:
-                              CGRectMake(size.width,
+                              CGRectMake(0,
                                          winSize.height / 1.5 -
                                          size.height * 4 * field.tag,
-                                         winSize.width-size.width, size.height*2)];
+                                         winSize.width, size.height*2)];
+    textField.center = CGPointMake(self.view.center.x, textField.center.y);
     
     [textField setDelegate:self];
     [[textField layer] setBorderWidth:0.5f];
