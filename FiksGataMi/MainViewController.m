@@ -98,9 +98,8 @@
 }
 
 -(void) pressedEditItem {
-    NSLog(@"%s", __PRETTY_FUNCTION__);
-    EditViewController *e = [EditViewController new];
-    [[self navigationController] presentViewController:e animated:YES completion:nil];
+    [[self navigationController] presentViewController:[EditViewController new]
+                                              animated:YES completion:nil];
 }
 
 #pragma mark - UIImagePickerControllerDelegate
