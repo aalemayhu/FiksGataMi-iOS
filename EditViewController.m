@@ -81,6 +81,8 @@ struct AAFormField AAFormFieldMake(int tag, NSString *placeholder, NSString *val
     [textField setTag:field.tag];
     [textField setPlaceholder:field.placeholder];
     [textField setText:field.value];
+    textField.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 5, 20)];
+    textField.leftViewMode = UITextFieldViewModeAlways;
     [[self view] addSubview:textField];
 }
 
