@@ -16,7 +16,7 @@
 - (void)setUp {
     [super setUp];
     
-    delegate = [[UIApplication sharedApplication] delegate];
+    delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     vc = (MainViewController *) delegate.window.rootViewController;
 }
 
