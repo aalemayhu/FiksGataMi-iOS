@@ -18,9 +18,7 @@
 		50F9AB3A1ACAF6D2009C6C0D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F9AB391ACAF6D2009C6C0D /* MainViewController.m */; };
 		50F9AB421ACAF6D2009C6C0D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F9AB401ACAF6D2009C6C0D /* LaunchScreen.xib */; };
 		50F9AB4E1ACAF6D2009C6C0D /* FiksGataMiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F9AB4D1ACAF6D2009C6C0D /* FiksGataMiTests.m */; };
-		50F9AB581ACB0213009C6C0D /* MainViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 50F9AB381ACAF6D2009C6C0D /* MainViewController.h */; };
 		50F9AB591ACB0213009C6C0D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F9AB391ACAF6D2009C6C0D /* MainViewController.m */; };
-		50F9AB5B1ACB06FF009C6C0D /* GlobalStrings.h in Sources */ = {isa = PBXBuildFile; fileRef = 50F9AB5A1ACB066A009C6C0D /* GlobalStrings.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -292,8 +290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50F9AB5B1ACB06FF009C6C0D /* GlobalStrings.h in Sources */,
-				50F9AB581ACB0213009C6C0D /* MainViewController.h in Sources */,
 				50F9AB591ACB0213009C6C0D /* MainViewController.m in Sources */,
 				50F9AB4E1ACAF6D2009C6C0D /* FiksGataMiTests.m in Sources */,
 			);
