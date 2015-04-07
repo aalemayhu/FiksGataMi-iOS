@@ -10,12 +10,8 @@
 #define FULL_NAME_TAG 3
 #define EMAIL_TAG 4
 
-
-
-
 - (void)configure {
     [super configure];
-    delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     [self configureFormFields];
     [self configureSubmit];
 }

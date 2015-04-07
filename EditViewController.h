@@ -3,7 +3,7 @@
 #import "FiksgatamiBaseController.h"
 
 @interface EditViewController : FiksgatamiBaseController<UITextFieldDelegate> {
-    AppDelegate *delegate;
+
 }
 
 @end
