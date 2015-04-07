@@ -64,6 +64,7 @@
     [imageView setContentMode:UIViewContentModeScaleAspectFit];
     [imageView setBackgroundColor:[UIColor redColor]];
     [[self view] addSubview:imageView];
+    [imageView setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
 }
 
 - (void)didReceiveMemoryWarning {

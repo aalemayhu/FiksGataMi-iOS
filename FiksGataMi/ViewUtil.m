@@ -21,6 +21,7 @@
     [textField setText:field.value];
     textField.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 5, 20)];
     textField.leftViewMode = UITextFieldViewModeAlways;
+    [textField setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
     [view addSubview:textField];
 }
 
