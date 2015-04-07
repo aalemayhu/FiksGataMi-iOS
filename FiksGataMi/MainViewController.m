@@ -1,9 +1,11 @@
 #import "MainViewController.h"
 #import "GlobalStrings.h"
 #import "EditViewController.h"
+#import "ViewUtil.h"
 #import <AVFoundation/AVFoundation.h>
 
 #define IMAGE_VIEW_TAG 2007
+#define REPORT_FIELD_TAG 2009
 
 @interface MainViewController ()
 
@@ -29,6 +31,12 @@
       target:self action:@selector(pressedEditItem)]];
     
     [self configureImageView];
+    //TODO: Consider retrieving a title if previously written but not sent.
+    [ViewUtil createTextField:AAFormFieldMake(REPORT_FIELD_TAG, @"Titel", @"")
+                      forView:self.view delegate:self];
+    UITextField *titleField = (UITextField *) [[self view] viewWithTag:REPORT_FIELD_TAG];
+    UIView *imageView = [[self view] viewWithTag:IMAGE_VIEW_TAG];
+    titleField.frame = CGRectMake(titleField.frame.origin.x, imageView.frame.origin.y-titleField.frame.size.height, titleField.frame.size.width, titleField.frame.size.height);
     [self configureToolbar];
 }
 
@@ -110,6 +118,13 @@
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     [[picker parentViewController] dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark - UITextFieldDelegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
 }
 
 @end
