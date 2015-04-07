@@ -112,7 +112,18 @@
 }
 
 - (void)presentGal {
-  // TODO: Get image from gallery.
+    if (![UIImagePickerController isSourceTypeAvailable:
+              UIImagePickerControllerSourceTypeSavedPhotosAlbum]) {
+        [delegate presentErrorWithMessage:@"Galleri ikke tilgjengelig.."];
+    }
+
+    UIImagePickerController *g = [[UIImagePickerController alloc] init];
+    g.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+    g.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:
+     UIImagePickerControllerSourceTypeSavedPhotosAlbum];    
+    g.allowsEditing = NO;
+    g.delegate = self;
+    [[self navigationController] presentViewController:g animated:YES completion:nil];
 }
 
 #pragma mark - Actions
