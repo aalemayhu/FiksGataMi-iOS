@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		500DF67F1AD29398005AA373 /* FiksgatamiBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 500DF67E1AD29398005AA373 /* FiksgatamiBaseController.m */; };
+		503B42391AD4685400DB2051 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 503B42381AD4685400DB2051 /* Default-568h@2x.png */; };
 		509233A01AD4198D002F9985 /* FiksGataMiServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092339F1AD4198D002F9985 /* FiksGataMiServer.m */; };
 		50AD132A1AD2A1DC008F1789 /* FormModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AD13291AD2A1DC008F1789 /* FormModel.m */; };
 		50AD132D1AD2A2AD008F1789 /* ViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AD132C1AD2A2AD008F1789 /* ViewUtil.m */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		500DF67D1AD29398005AA373 /* FiksgatamiBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiksgatamiBaseController.h; sourceTree = "<group>"; };
 		500DF67E1AD29398005AA373 /* FiksgatamiBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiksgatamiBaseController.m; sourceTree = "<group>"; };
+		503B42381AD4685400DB2051 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5092339E1AD4198D002F9985 /* FiksGataMiServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiksGataMiServer.h; sourceTree = "<group>"; };
 		5092339F1AD4198D002F9985 /* FiksGataMiServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiksGataMiServer.m; sourceTree = "<group>"; };
 		50AD13281AD2A1DC008F1789 /* FormModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormModel.h; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		50F9AB251ACAF6D2009C6C0D = {
 			isa = PBXGroup;
 			children = (
+				503B42381AD4685400DB2051 /* Default-568h@2x.png */,
 				50F9AB301ACAF6D2009C6C0D /* FiksGataMi */,
 				50F9AB4A1ACAF6D2009C6C0D /* FiksGataMiTests */,
 				50F9AB2F1ACAF6D2009C6C0D /* Products */,
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50F9AB421ACAF6D2009C6C0D /* LaunchScreen.xib in Resources */,
+				503B42391AD4685400DB2051 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
