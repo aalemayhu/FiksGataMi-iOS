@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		500DF67F1AD29398005AA373 /* FiksgatamiBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 500DF67E1AD29398005AA373 /* FiksgatamiBaseController.m */; };
+		509233A01AD4198D002F9985 /* FiksGataMiServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092339F1AD4198D002F9985 /* FiksGataMiServer.m */; };
 		50AD132A1AD2A1DC008F1789 /* FormModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AD13291AD2A1DC008F1789 /* FormModel.m */; };
 		50AD132D1AD2A2AD008F1789 /* ViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AD132C1AD2A2AD008F1789 /* ViewUtil.m */; };
 		50D392CB1ACBEAE800E369A0 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D392CA1ACBEAE800E369A0 /* EditViewController.m */; };
@@ -34,6 +35,8 @@
 /* Begin PBXFileReference section */
 		500DF67D1AD29398005AA373 /* FiksgatamiBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiksgatamiBaseController.h; sourceTree = "<group>"; };
 		500DF67E1AD29398005AA373 /* FiksgatamiBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiksgatamiBaseController.m; sourceTree = "<group>"; };
+		5092339E1AD4198D002F9985 /* FiksGataMiServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiksGataMiServer.h; sourceTree = "<group>"; };
+		5092339F1AD4198D002F9985 /* FiksGataMiServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiksGataMiServer.m; sourceTree = "<group>"; };
 		50AD13281AD2A1DC008F1789 /* FormModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormModel.h; sourceTree = "<group>"; };
 		50AD13291AD2A1DC008F1789 /* FormModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormModel.m; sourceTree = "<group>"; };
 		50AD132B1AD2A2AD008F1789 /* ViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtil.h; sourceTree = "<group>"; };
@@ -72,6 +75,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5092339D1AD4197E002F9985 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				5092339E1AD4198D002F9985 /* FiksGataMiServer.h */,
+				5092339F1AD4198D002F9985 /* FiksGataMiServer.m */,
+			);
+			name = Server;
+			sourceTree = "<group>";
+		};
 		50AD13271AD2A191008F1789 /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +123,7 @@
 		50F9AB301ACAF6D2009C6C0D /* FiksGataMi */ = {
 			isa = PBXGroup;
 			children = (
+				5092339D1AD4197E002F9985 /* Server */,
 				50AD132E1AD2A569008F1789 /* Model */,
 				50AD13271AD2A191008F1789 /* Util */,
 				50F9AB571ACAF8D4009C6C0D /* Controllers */,
@@ -264,6 +277,7 @@
 				50D392CB1ACBEAE800E369A0 /* EditViewController.m in Sources */,
 				50F9AB3A1ACAF6D2009C6C0D /* MainViewController.m in Sources */,
 				50F9AB371ACAF6D2009C6C0D /* AppDelegate.m in Sources */,
+				509233A01AD4198D002F9985 /* FiksGataMiServer.m in Sources */,
 				50F9AB341ACAF6D2009C6C0D /* main.m in Sources */,
 				500DF67F1AD29398005AA373 /* FiksgatamiBaseController.m in Sources */,
 				50AD132D1AD2A2AD008F1789 /* ViewUtil.m in Sources */,
