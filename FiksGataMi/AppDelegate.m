@@ -37,5 +37,12 @@
     [userDefaults setValue:value forKeyPath:key];
 }
 
+-(void) presentErrorWithMessage:(NSString *) msg {
+    [[[UIAlertView alloc] initWithTitle:@"Feilmelding"
+                                message:msg
+                               delegate:nil
+                      cancelButtonTitle:@"OK"
+                      otherButtonTitles:nil] show];
+}
 
 @end

@@ -45,18 +45,10 @@
     NSString *email = [self fieldValueForKey:EMAIL_TAG];
     NSString *name = [self fieldValueForKey:FULL_NAME_TAG];
     if (![self isEmailValid:email]) {
-        [[[UIAlertView alloc] initWithTitle:@"Feilmelding"
-                                    message:@"Ugyldig epostaddresse"
-                                   delegate:nil
-                          cancelButtonTitle:@"OK"
-                          otherButtonTitles:nil] show];
+        [delegate presentErrorWithMessage:@"Ugyldig epostaddresse"];
         return;
     } else if (name.length < 1) {
-        [[[UIAlertView alloc] initWithTitle:@"Feilmelding"
-                                    message:@"Oppgi navn"
-                                   delegate:nil
-                          cancelButtonTitle:@"OK"
-                          otherButtonTitles:nil] show];
+        [delegate presentErrorWithMessage:@"Oppgi navn"];
         return;
     }
 

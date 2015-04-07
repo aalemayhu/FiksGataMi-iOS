@@ -6,6 +6,6 @@
 
 -(void) storeDetails:(NSString *) fullname email:(NSString *)email;
 -(NSString *) valueForKey:(NSString *)key;
-
+-(void) presentErrorWithMessage:(NSString *) msg;
 @end
 

@@ -96,11 +96,7 @@
   // https://developer.apple.com/library/ios/documentation/AudioVideo/Conceptual/CameraAndPhotoLib_TopicsForIOS/Articles/TakingPicturesAndMovies.html
   if (![UIImagePickerController
              isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-    [[[UIAlertView alloc] initWithTitle:@"Feilmelding"
-                                message:@"Kamera er ikke tilgjengelig."
-                               delegate:nil
-                      cancelButtonTitle:@"OK"
-                      otherButtonTitles:nil] show];
+      [delegate presentErrorWithMessage:@"Kamera er ikke tilgjengelig."];
     return;
   }
 
