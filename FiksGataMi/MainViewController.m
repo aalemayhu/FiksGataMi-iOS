@@ -94,9 +94,8 @@
 
 - (void)presentCam {
   // https://developer.apple.com/library/ios/documentation/AudioVideo/Conceptual/CameraAndPhotoLib_TopicsForIOS/Articles/TakingPicturesAndMovies.html
-  if (([UIImagePickerController
-           isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera] ==
-       NO)) {
+  if (![UIImagePickerController
+             isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
     [[[UIAlertView alloc] initWithTitle:@"Feilmelding"
                                 message:@"Kamera er ikke tilgjengelig."
                                delegate:nil
