@@ -6,5 +6,6 @@
 #define MAIN_VIEW_CONTROLLER_TITLE @"FiksGataMi"
 #define KEY_FULL_NAME @"name"
 #define KEY_EMAIL @"email"
+#define KEY_TITLE @"title"
 
 #endif

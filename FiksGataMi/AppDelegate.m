@@ -33,5 +33,9 @@
     return [userDefaults valueForKey:key];
 }
 
+-(void) setValue:(id)value forKey:(NSString *)key {
+    [userDefaults setValue:value forKeyPath:key];
+}
+
 
 @end

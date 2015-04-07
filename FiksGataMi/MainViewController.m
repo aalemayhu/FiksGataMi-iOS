@@ -36,8 +36,7 @@
 
 
 -(void) configureTitleField {
-    //TODO: Consider retrieving a title if previously written but not sent.
-    [ViewUtil createTextField:AAFormFieldMake(REPORT_FIELD_TAG, @"Titel", @"")
+    [ViewUtil createTextField:AAFormFieldMake(REPORT_FIELD_TAG, @"Titel", [delegate valueForKey:KEY_TITLE])
                       forView:self.view delegate:self];
     UITextField *titleField = (UITextField *) [[self view] viewWithTag:REPORT_FIELD_TAG];
     UIView *imageView = [[self view] viewWithTag:IMAGE_VIEW_TAG];
@@ -128,6 +127,7 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
+    [delegate setValue:KEY_TITLE forKeyPath:textField.text];
     return YES;
 }
 
