@@ -29,15 +29,19 @@
      [[UIBarButtonItem alloc]
       initWithTitle:@"Rediger" style:UIBarButtonItemStylePlain
       target:self action:@selector(pressedEditItem)]];
-    
     [self configureImageView];
+    [self configureTitleField];
+    [self configureToolbar];
+}
+
+
+-(void) configureTitleField {
     //TODO: Consider retrieving a title if previously written but not sent.
     [ViewUtil createTextField:AAFormFieldMake(REPORT_FIELD_TAG, @"Titel", @"")
                       forView:self.view delegate:self];
     UITextField *titleField = (UITextField *) [[self view] viewWithTag:REPORT_FIELD_TAG];
     UIView *imageView = [[self view] viewWithTag:IMAGE_VIEW_TAG];
     titleField.frame = CGRectMake(titleField.frame.origin.x, imageView.frame.origin.y-titleField.frame.size.height, titleField.frame.size.width, titleField.frame.size.height);
-    [self configureToolbar];
 }
 
 -(void) configureToolbar {
