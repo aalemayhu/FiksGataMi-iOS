@@ -50,7 +50,7 @@
   UIView* imageView = [[self view] viewWithTag:IMAGE_VIEW_TAG];
   titleField.frame =
       CGRectMake(titleField.frame.origin.x,
-                 imageView.frame.origin.y - titleField.frame.size.height,
+                 imageView.frame.origin.y - titleField.frame.size.height*1.5,
                  titleField.frame.size.width, titleField.frame.size.height);
 }
 
@@ -76,7 +76,7 @@
 - (void)configureImageView {
   CGSize winSize = self.view.frame.size;
   UIImageView* imageView = [[UIImageView alloc]
-      initWithFrame:CGRectMake(0, winSize.width * 0.5, winSize.width,
+      initWithFrame:CGRectMake(0, winSize.width * 0.4, winSize.width,
                                winSize.height / 2)];
   [imageView setTag:IMAGE_VIEW_TAG];
   [imageView setContentMode:UIViewContentModeScaleAspectFit];
