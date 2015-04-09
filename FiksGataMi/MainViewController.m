@@ -80,7 +80,6 @@
                                winSize.height / 2)];
   [imageView setTag:IMAGE_VIEW_TAG];
   [imageView setContentMode:UIViewContentModeScaleAspectFit];
-  [imageView setBackgroundColor:[UIColor redColor]];
   [[self view] addSubview:imageView];
   [imageView setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
 }
